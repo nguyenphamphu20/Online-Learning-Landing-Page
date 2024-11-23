@@ -29,6 +29,7 @@ body {
 
 .main-content {
     width: 1170px;
+    max-width: calc(100% - 24px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -49,6 +50,14 @@ a {
     overflow: hidden;
 }
 
+.line-clamp.two-line {
+    --line-clamp: 2;
+}
+
+.line-clamp.three-line {
+    --line-clamp: 3;
+}
+
 .break-all {
     word-break: break-all;
 }
@@ -63,9 +72,12 @@ a {
 /* header-fixed */
 .header-fixed {
     padding-top: 52px;
+    padding-bottom: 10px;
     position: sticky;
-    top: -44px;
+    top: -42px;
     left: 0;
+    z-index: 1;
+    background-color: #fff;
 }
 
 header {
@@ -150,4 +162,97 @@ header .group-actions {
 .sign-up-btn:hover {
     background-color: var(--primary-color);
     color: #fff;
+}
+
+/* hero */
+.hero {
+    margin-top: 40px;
+}
+
+.block-hero {
+    display: flex;
+}
+
+.text-hero,
+.img-hero {
+    width: 50%;
+}
+
+.text-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-hero .logan {
+    color: #767e7e;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.text-hero .heading {
+    margin-top: 18px;
+    width: 458px;
+}
+
+.text-hero .desc {
+    margin-top: 46px;
+    width: 374px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78;
+}
+
+.text-hero .group-cta {
+    margin-top: 52px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.text-hero .cta-btn {
+    min-width: 186px;
+    height: 68px;
+    line-height: 68px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 14px;
+    border: 1px solid var(--primary-color);
+}
+
+.text-hero .cta-btn:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.text-hero .group-cta .play-video {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: var(--primary-color);
+    transition: all ease 0.25s;
+    cursor: pointer;
+}
+
+.text-hero img {
+    display: block;
+}
+
+.text-hero .group-cta .play-video:hover {
+    background: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+}
+
+.img-hero img {
+    width: 100%;
+    height: 631px;
+    object-fit: cover;
 }
