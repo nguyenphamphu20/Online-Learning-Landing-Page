@@ -2,7 +2,152 @@ html {
     font-size: 62.5%;
 }
 
+:root {
+    --primary-color: #1ebfc1;
+    --text-color: #0d1111;
+}
+
 body {
     font-size: 1.6 rem;
     font-family: Poppins, sans-serif;
+}
+/* common */
+.heading {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.heading.level-1 {
+    font-size: 6.2rem;
+    line-height: 1.16;
+}
+
+.heading.level-2 {
+    font-size: 4.2rem;
+    line-height: 1.33;
+}
+
+.main-content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+:is(a:link, a:active, a:hover, a:active) {
+    color: var(--link-color, #0d1111);
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+.btn {
+    min-width: 108px;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-weight: 600;
+    transition: all ease 0.25s;
+}
+/* header-fixed */
+.header-fixed {
+    padding-top: 52px;
+    position: sticky;
+    top: -44px;
+    left: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.item-nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0 19.5px;
+    height: 48px;
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.item-nav.active {
+    font-weight: 600;
+}
+
+.item-nav:hover a {
+    font-weight: 600;
+}
+
+.item-nav a::before {
+    content: attr(title);
+    display: block;
+    height: 0;
+    font-weight: 600;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+header .group-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.sign-in-btn {
+    color: #494949;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sign-in-btn:hover {
+    font-weight: 600;
+}
+
+.sign-in-btn::after {
+    content: attr(title);
+    display: block;
+    font-weight: 600;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.sign-up-btn {
+    min-width: 108px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #fff;
+    border-radius: 6px;
+    --link-color: #1ebfc1;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: 1px solid #1ebfc1;
+}
+
+.sign-up-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
 }
