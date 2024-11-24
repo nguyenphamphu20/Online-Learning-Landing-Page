@@ -380,15 +380,15 @@ header .group-actions {
 }
 
 .img-hero .bg-face:nth-child(2) {
-    background-color: #FFC147;
+    background-color: #ffc147;
 }
 
 .img-hero .bg-face:nth-child(3) {
-    background-color: #FF947A;
+    background-color: #ff947a;
 }
 
 .img-hero .bg-face:nth-child(4) {
-    background-color: #BF83FF;
+    background-color: #bf83ff;
 }
 
 .img-hero .students img {
@@ -409,4 +409,29 @@ header .group-actions {
     font-weight: 500;
     border-radius: 50%;
     flex-shrink: 0;
+}
+
+/* features */
+/* title */
+
+.features {
+    margin-top: 209px;
+}
+
+.features-title .text {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.features-title .heading {
+    margin-top: 18px;
+    width: 577px;
+}
+
+.features-title .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
 }
