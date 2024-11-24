@@ -603,3 +603,31 @@ header .group-actions {
     font-weight: 400;
     line-height: normal;
 }
+/* stats */
+.stats {
+    margin-top: 389px;
+}
+
+.stats-list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    width: 862px;
+    max-width: 73.68%;
+}
+
+.stats-list .item strong {
+    color: var(--text-color);
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.stats-list .item .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
