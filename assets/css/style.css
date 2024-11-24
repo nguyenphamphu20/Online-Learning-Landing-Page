@@ -40,6 +40,7 @@ body {
 a {
     display: inline-block;
     text-decoration: none;
+    color: #0d1111;
 }
 
 :is(a:link, a:active, a:hover, a:active) {
@@ -519,4 +520,86 @@ header .group-actions {
     font-weight: 700;
     line-height: normal;
     text-decoration-line: underline;
+}
+/* popular body */
+
+.popular-body {
+    margin-top: 79px;
+}
+
+.popular-list {
+    display: flex;
+    gap: 47px;
+}
+
+.popular-list .item {
+    position: relative;
+    width: 33.33%;
+}
+
+.popular-list .item .thumb {
+    width: 100%;
+    height: 393px;
+    background: #d0efed;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0.35;
+}
+
+.popular-list .card {
+    position: absolute;
+    bottom: -124px;
+    left: 17px;
+    right: 17px;
+    width: 91%;
+    height: 195px;
+    padding: 18px 28px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular-list .card .sub-title {
+    color: var(--text-color);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.popular-list .card .price {
+    margin-top: 16px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.popular-list .card strong {
+    color: var(--text-color);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.popular-list .card .desc {
+    margin-top: 6px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.popular-list .card .detail {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.popular-list .card .detail span {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
 }
