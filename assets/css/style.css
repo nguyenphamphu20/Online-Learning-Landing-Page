@@ -631,3 +631,85 @@ header .group-actions {
     line-height: normal;
 }
 
+/* feedback */
+.feedback {
+    margin-top: 264px;
+}
+
+.block-feedback {
+    position: relative;
+    display: flex;
+    height: 481px;
+}
+
+.block-feedback .text-block {
+    width: 36%;
+}
+
+.block-feedback .text-block .quote {
+    margin-top: 37px;
+}
+
+.block-feedback .text-block .desc {
+    margin-top: 27px;
+    color: #5d6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.block-feedback .text-block .name {
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.block-feedback .text-block .name span {
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.block-feedback .text-block .name strong {
+    color: #070707;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.block-feedback .group-actions {
+    position: absolute;
+    left: 0;
+    bottom: 37px;
+    display: flex;
+    gap: 30px;
+}
+
+.block-feedback :is(.arrow-left, .arrow-right) {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: all ease 0.25s;
+}
+
+.block-feedback :is(.arrow-left, .arrow-right):hover {
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+.block-feedback .img-block {
+    width: 64%;
+}
+
+.block-feedback .img-block .location-1 {
+    width: 235px;
+    height: 235px;
+}
