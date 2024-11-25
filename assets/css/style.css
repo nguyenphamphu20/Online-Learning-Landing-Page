@@ -785,3 +785,92 @@ header .group-actions {
     height: 78px;
     background-color: #b1dfdc;
 }
+
+/* register */
+.register {
+    margin-top: 130px;
+    padding: 76px 0 88px;
+    background: #def6f5;
+}
+
+.block-register {
+    display: flex;
+    align-items: center;
+}
+
+.block-register .text-register {
+    width: 36%;
+}
+
+.text-register .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.block-register .actions-register {
+    width: 64%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions-register .cta-btn {
+    width: 186px;
+    height: 68px;
+    margin-right: 154px;
+    line-height: 68px;
+    border: 1px solid #2ac9bf;
+    border-radius: 14px;
+    background: #2ac9bf;
+    color: #fff;
+}
+
+.actions-register .cta-btn:hover {
+    background: #fff;
+    color: #2ac9bf;
+}
+
+/* footer */
+footer {
+    margin-top: 130px;
+}
+
+.group-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.group-footer .group-link .item + .item a {
+    margin-top: 20px;
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.group-footer .group-link .item.title a {
+    padding-bottom: 5px;
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.group-footer .group-link .item .social {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+footer .copyright {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+}
